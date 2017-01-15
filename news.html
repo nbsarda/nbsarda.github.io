@@ -42,7 +42,7 @@
 		<!-- COLOR SWITCHER CSS -->
 		<link rel="stylesheet" href="assets/css/switcher/switcher.css"> 	
 		<link rel="stylesheet" href="assets/css/switcher/style1.css" id="colors">
-		<link href='//fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+		<link href='//fonts.googleapis.com/css?family=Eagle Lake' rel='stylesheet'>
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -250,7 +250,23 @@
 		<!-- CONTACT FORM JS -->
 			<script src="assets/js/form-contact.js"></script>
 		<!-- GOOGLE MAP JS -->
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
+			<script>
+      function initMap() {
+        var uluru = {lat: 21.0805909, lng: 79.7829937};
+        var map = new google.maps.Map(document.getElementById('contactgoogleMap'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+		<!-- GOOGLE MAP JS -->
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo&callback=initMap"</script>
+
         <!-- JQUERY MAIN SCRIPTS -->
 			<script src="assets/js/scripts.js"></script>
 	</body>
