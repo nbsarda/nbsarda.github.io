@@ -143,18 +143,17 @@
 		// 12. END AJAXCHIMP JS
 		
         // 13. START GOOGLE MAP JS
-         var myCenter=new google.maps.LatLng(-37.81137, 144.96102);
+         var uluru=new google.maps.LatLng(21.0805909, 79.7829937);
             function initialize(){
-				var mapProp = {
-					zoom:16,
-					center:myCenter,
-					scrollwheel: false,
-					styles: [ { "stylers": [ { "hue": "#ffffff" },  {saturation: -100},
-					{gamma: 2} ] } ],
-					mapTpeIdy:google.maps.MapTypeId.ROADMAP
-				};
-	            var map=new google.maps.Map(document.getElementById("contactgoogleMap"),mapProp);
-            }
+           var map = new google.maps.Map(document.getElementById('contactgoogleMap'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
             google.maps.event.addDomListener(window, 'load', initialize);        
 		// 13. END GOOGLE MAP JS
 	});
