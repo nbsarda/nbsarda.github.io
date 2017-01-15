@@ -395,7 +395,7 @@ form#mc-form {
 * -------------------------------------------------------------
 */
 .header-top-area {
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 999;
     -webkit-transition: all 0.36s ease-out;
@@ -419,7 +419,7 @@ form#mc-form {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus { background-color: transparent }
 .navbar-brand {
-    color: blue !important;
+    color: white !important;
     font-family: 'Roboto Slab', serif;
     font-size: 26px;
     font-weight: 700;
@@ -435,7 +435,8 @@ form#mc-form {
 .navbar-default .navbar-toggle:focus { background-color: #fff }
 .navbar-default .navbar-toggle .icon-bar { background-color: #333 }
 .mainmenu li a {
-    color: blue !important;
+    color: white
+     !important;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
