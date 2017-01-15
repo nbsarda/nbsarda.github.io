@@ -395,7 +395,7 @@ form#mc-form {
 * -------------------------------------------------------------
 */
 .header-top-area {
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 999;
     -webkit-transition: all 0.36s ease-out;
