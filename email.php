@@ -3,7 +3,7 @@ $to = "n.lahoti01@gmail.com";
 //echo $to;
 $subject = "Website Query Mail";
 $name = "";
-#$contact = "";
+$contact = "";
 $email="";
 $message="";
 $message_to_send="";
@@ -11,7 +11,7 @@ $x="n.lahoti01@gmail.com";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$email = $_POST['email'];
-    #$contact = $_POST['contactnumber'];
+    $contact = $_POST['footerphone'];
 		$name = $_POST['fullname'];
 		$message = $_POST['message'];
 	}
