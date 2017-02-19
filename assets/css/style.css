@@ -289,7 +289,7 @@ fieldset {
 */
 .header-area {
 	height: 100%;
-	background-image: url("../img/preloader3.jpg") ;
+	background-image: url("../img/preloader1.jpg") ;
     /*background-color: white;*/
     background-size: cover;
 	background-position: center;
@@ -864,7 +864,7 @@ form#mc-form {
 * -------------------------------------------------------------
 */
 .breadcrumb-main{
-	background:url(assests/img/preloader.jpg) scroll 0 0;
+	background:url(assests/img/preloader1.jpg) scroll 0 0;
 	background-position: center center;
 	background-size: cover;
 	position: relative;
